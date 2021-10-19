@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <title>BURGERS</title>
+    <head>
+        <style>
+        
+    
+        h2 {
+            display: inline;
+        }
+        #resultArea {
+            font-size: 20px;
+        }
+
+        
+        </style>
+    </head>
+
+    <body>
+        <!--title logo-->
+        <h1> Burgers</h1>
+        <div id="contact">
+            <h2>Name: </h2><label><input id="customername" name="customername" type="text" placeholder="Enter Name" required></label></br>
+      
+            <br><br>
+
+            <h2>Mobile: </h2><label><input id="phoneno" type="text" placeholder="Enter Name" required></label><br><br>
+        </div>
+
+        <div>
+        <h2>Ingrediants:</h2><br><br>
+        <!--Meat field-->
+        
+
+        
+            <label style="font-size: 25px">Meat:</label><br><br>
+
+        <div class="meat">
+            <input id="chicken" type="radio" name="meat" value=2 required>
+            <label for="chicken">Chicken</label></br>
+            <input id="pork"  type="radio" name="meat" value=3 required>
+            <label for="pork">Pork</label><br>
+            <input id="beef"  type="radio" name="meat" value=3 required>
+            <label for="beef">Beef</label><br><br>
+        </div>
+            <label style="font-size: 25px">Cheese:</label><br><br>
+        
+        <div class="cheese" value="s">
+            <label><input type="checkbox" id="cheddar" name="cheese" value=1>Cheddar $1</label><br>
+                <input type="checkbox" id="Brie" name="cheese" value=1>
+                <label for="Brie"> Brie $1</label><br>
+                <input type="checkbox" id="Goat_Cheese" name="cheese" value=2>
+                <label for="Goat_Cheese"> Goat Cheese $1</label><br>
+                <input type="checkbox" id="Stilton" name="cheese" value=1>
+                <label for="Stilton"> Stilton $1</label><br>
+                <input type="checkbox" id="Smoked_Goude" name="cheese" value=1>
+                <label for="Smoked_Goude"> Smoked Goude $1</label><br><br>
+        </div>
+                
+         
+                <label style="font-size: 25px">Sauce:</label><br><br>
+
+         <div class="sauce">
+              <input type="checkbox" id="Classic_Burger_Sauce"  name="sauce" value=0.5>
+                <label for="Classic_Burger_Sauce"> Classic Burger Sauce $0.5</label><br>
+                <input type="checkbox" id="Frenchie" name="sauce" value=0.5>
+                <label for="Frenchie"> Frenchie $0.5</label><br>
+                <input type="checkbox" id="Blue_Cheese_Mayo" name="sauce" value=0.5>
+                <label for="Blue_Cheese_Mayo"> Blue Cheese Mayo $0.5</label><br>
+                <input type="checkbox" id="Maple_Bacon_Relish" name="sauce" value=0.5>
+                <label for="Maple_Bacon_Relish"> Maple Bacon Relish $0.5</label><br><br>
+        </div>       
+               
+       
+
+         <!--Vegetables field-->
+      
+                <label style="font-size: 25px">Vegetables:</label><br><br>
+        
+        <div class="veg"> 
+            <input type="checkbox" id="Onion"  name="veg" value=1>
+                <label for="Onion"> Onion $1</label>
+                <input type="checkbox" id="Pickle" name="veg" value=1>
+                <label for="Pickle"> Pickle $1</label>
+                <input type="checkbox" id="Tomatoes" name="veg" value=1>
+                <label for="Tomatoes"> Tomatoes $1</label>
+                <input type="checkbox" id="Lettuce" name="veg" value=1>
+                <label for="Lettuce"> Lettuce $1</label><br><br>
+        </div>
+               
+        
+  
+        <!--Spice level field-->
+        <label style="font-size: 25px">Spice level</label><br><br>
+
+    
+     <div id="spice">
+         <select id="spicelevel">
+           <option value="None">None</option>
+           <option value="Mild">Mild ($0.5)</option>
+           <option value="Medium">Medium ($0.75)</option>
+           <option value="Extra">Extra ($1.00)</option>
+       </select><br><br>
+    </div>   
+       
+   
+        <!--Beverage field-->
+        
+        <label style="font-size: 25px" for="drinks">Beverage:</label><br>
+        <div id="beverage">
+            <input list="options" id="drinks"/>
+        <datalist id="options">
+            <option value="Coke $2">
+            <option value="Mountain Dew $2">
+            <option value="Sprite $2">
+            <option value="Bunderberg $2">
+        </datalist><br>
+    </div>   
+        
+     
+        
+        <button onclick="submitOrder()">Submit</button>
+    </div>
+
+   
+
+    <div>
+    <h2>Your Order</h2>
+
+    <div id="resultArea">
+
+    </div>
+     
+    <script src="backend2.js"></script>
+    </body>
+ </html>
